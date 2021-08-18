@@ -1,0 +1,142 @@
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.1em;
+  background: #282828;
+  color: #f9f5d7;
+}
+
+/*** Common element styles ***/
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+}
+h1 {
+  font-size: 60px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 20px;
+}
+p, span, .content {
+  color: #fbf1c7;
+  opacity: .75;
+}
+.btn {
+  padding: 8px 16px;
+  text-transform: uppercase;
+  box-shadow: transparent;
+}
+.btn.btn-main {
+  background-color: tomato;
+}
+
+/*** Main content ***/
+
+.wrapper {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "aside content";
+  column-gap: 10px;
+  align-content: stretch;
+  justify-content: center;
+}
+
+/* Left side */
+.aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 90vh;
+  width: 20%;
+  margin-right: auto;
+  position: fixed;
+}
+
+.intro > .profile {
+  margin-bottom: 35px;
+}
+
+.side-nav {
+  margin-top: 10px;
+}
+.side-nav > .nav {
+  list-style-type: decimal;
+  padding-inline-start: 30px;
+  padding-left: 30px;
+}
+
+.nav .nav-item {
+  padding: 5px;
+  color: #fbf1c7;
+  opacity: .75;
+}
+.nav .nav-item:hover {
+  color: #f9f5d7;
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-underline-offset: 2px;
+  opacity: 1;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+}
+.links .social {
+  display: inline-flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding-left: 0;
+}
+.links .social .social-item {
+  padding: 0 8px;
+}
+
+/* Right side */
+.main-content {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  justify-content: end;
+  margin-left: auto;
+}
+
+.section {
+  margin: 20px;
+  padding: 10px 30px;
+}
+.section-head {
+  margin-bottom: 20px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid #fbf1c7;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.item .meta {
+  font-size: .8em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
