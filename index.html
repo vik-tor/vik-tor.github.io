@@ -22,7 +22,8 @@
   <div class="wrapper">
     <aside class="aside">
       <div class="intro">
-        <h1 class="head">Hello, I'm Victor Machira</h1>
+        <h1 class="head">Hello, I'm <br> Victor Machira</h1>
+        <br>
         <p class="profile">I am a technology enthusiast who, through experimentation and innovation, leverages the power
           of technology to solve problems in our world. My mission is to be part of the force that enables its adoption
           with the end goal of making our lives easier. I possess a keen attention to detail and I keep an open mind
@@ -33,14 +34,13 @@
       <nav class="side-nav">
         <ol class="nav">
           <li class="nav-item">Experience</li>
+          <li class="nav-item">Education</li>
           <li class="nav-item">Skills</li>
-          <!-- <li class="nav-item">Blog</li> -->
           <li class="nav-item">Contact</li>
         </ol>
       </nav>
       <div class="links">
-        <img src="img/headshot.jpg" alt="Headshot" width="50px" height="50px"
-          style="padding: 10px; border: 1px; border-spacing: 2px; border-radius: 50px;">
+        <img src="img/headshot_dark.jpg" alt="Headshot">
         <ul class="social">
           <li class="social-item">
             <a href="https://github.com/vik-tor" class="social-link" target="_blank" rel="noopener noreferrer">
@@ -130,31 +130,45 @@
           </div>
         </div>
       </section>
+      <section class="section" id="Education">
+        <div class="section-head">
+          <h2 class="section-title">Education</h2>
+        </div>
+        <div class="item">
+          <div class="meta">
+            <span>Technical University of Mombasa</span>
+            <span>2014 - 2022</span>
+          </div>
+          <h3 class="heading">
+            Bachelor of Science: Information Technology
+          </h3>
+          <div class="content">
+            Graduated: 2<sup>nd</sup> Class Honors
+          </div>
+        </div>
+      </section>
       <section class="section" id="skills">
         <div class="section-head">
           <h2 class="section-title">Skills</h2>
         </div>
         <div class="item">
-          <ul>
-            <li>Backend development with Node.js and Express.js.</li>
-            <li>Frontend development with HTML, CSS (SASS), JavaScript and its frameworks (React & Vue.js)</li>
-            <li>Web application development with PHP and Laravel</li>
-            <li>Version control with Git</li>
-            <li>RESTful API design, development and deployment</li>
-            <li>Web service deployment on AWS</li>
-            <li>Golang essentials</li>
-            <li>CI/CD pipelines with Travis CI</li>
-            <li>Database management with PostgreSQL and MySQL</li>
-            <li>Computer setup and troubleshooting</li>
+          <ul class="skills">
+            <li>Go</li>
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>Vue.js</li>
+            <li>React</li>
+            <li>PHP</li>
+            <li>Laravel</li>
+            <li>RESTful Apis</li>
+            <li>AWS</li>
+            <li>Travis CI</li>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
           </ul>
         </div>
       </section>
-      <!-- <section class="section" id="Blog">
-        <div class="section-head">
-          <h2 class="section-title">Blog</h2>
-        </div>
-        <div class="item"></div>
-      </section> -->
       <section class="section" id="contact">
         <div class="section-head">
           <h2 class="section-title">Contact</h2>
@@ -169,7 +183,7 @@
               <label for="message">Message</label>
               <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
             </div>
-            <button type="submit" class="btn btn-main">Submit</button>
+            <button type="submit" class="btn btn-main">Send message</button>
           </form>
         </div>
       </section>
