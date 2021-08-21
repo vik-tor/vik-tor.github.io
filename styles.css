@@ -1,7 +1,22 @@
+:root {
+	--accent-red: rgba(227, 3, 11, 1);
+	--accent-yellow: rgba(252, 236, 96, 1);
+	--heading: rgba(0, 0, 0, 0.7);
+
+  --bg-dark: #1d2021;
+  --bg-light: #f8f7f1;
+  --text-dark: rgba(0, 0, 0, 0.75);
+	--text-light: rgba(255, 255, 255, 0.8);
+  --opacity: .75;
+  --blur: saturate(125%) blur(30px);
+}
+
 body {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
-  font-size: 1.1em;
+  font-size: 1em;
+  line-height: 1.4em;
+  letter-spacing: .2px;
   background: #1d2021;
   color: #f8f7f1;
 }
@@ -13,24 +28,32 @@ h2, .h2,
 h3, .h3,
 h4, .h4,
 h5, .h5 {
-  font-family: 'Roboto Slab', serif;
-  font-weight: 700;
+  font-family: 'Noto Sans JP', 'Noto Sans', sans-serif;
 }
 h1 {
-  font-size: 50px;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: initial;
 }
 h2 {
   font-size: 26px;
+  font-weight: 600;
 }
 h3 {
   font-size: 20px;
+  font-weight: 600;
 }
 h4 {
   font-size: 20px;
+  font-weight: 400;
 }
 p, span, .content {
   color: #f8f4e4;
   opacity: .75;
+}
+ol {
+  margin: 15px 0;
+  padding-left: 25px;
 }
 .btn {
   padding: 10px 16px;
@@ -97,7 +120,7 @@ a.btn {
     justify-content: space-between;
     align-content: center;
     height: 90vh;
-    width: 25%;
+    width: 28%;
     margin-right: auto;
     position: fixed;
   }
@@ -213,7 +236,8 @@ a.btn {
   }
 }
 .section-head {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
 }
 .item {
   display: flex;
@@ -222,10 +246,13 @@ a.btn {
   border-radius: 8px;
   padding: 25px;
   margin-bottom: 8px;
-  color: #f8f4e4;
-  opacity: .75;
 }
 @media (min-width: 992px) {
+  .section-head {
+    margin-bottom: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
   .item {
     padding: 40px;
   }
@@ -234,9 +261,23 @@ a.btn {
   }
 }
 .item .meta {
-  font-size: .8rem;
-  text-transform: uppercase;
+  font-family: 'Noto Sans JP', 'Noto Sans', sans-serif;
+  font-size: .7em;
   font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  color: #f8f7f1;
+}
+.item .heading {
+  margin: 10px 0 12px;
+}
+.item .content {
+  margin-bottom: 15px;
+  opacity: var(--opacity);
+}
+.item .footer .bi {
+  color: #f9f5d7;
+  font-size: .8rem;
 }
 
 .skills {
@@ -248,6 +289,7 @@ a.btn {
   display: inline-block;
   margin: 6px;
   padding: 5px 10px;
+  border-radius: 4px;
   color: #282828;
   background-color: #fbf1c7;
   cursor: default;
